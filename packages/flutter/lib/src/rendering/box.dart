@@ -2881,8 +2881,13 @@ abstract class RenderBox extends RenderObject {
   /// having been called in [hitTest] but cannot rely upon [paint] having been
   /// called. For example, a render object might be a child of a [RenderOpacity]
   /// object, which calls [hitTest] on its children when its opacity is zero
+<<<<<<< HEAD
   /// even through it does not [paint] its children.
   bool hitTest(BoxHitTestResult result, {required Offset position}) {
+=======
+  /// even though it does not [paint] its children.
+  bool hitTest(BoxHitTestResult result, { required Offset position }) {
+>>>>>>> a8345d539996b4cd6605c0f7848349340d0d206c
     assert(() {
       if (!hasSize) {
         if (debugNeedsLayout) {
